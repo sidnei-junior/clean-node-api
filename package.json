@@ -6,9 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "sidnei-junior",
   "license": "ISC",
+  "lint-staged": {
+    "*js": [
+      "standard"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  },
   "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.3",
     "standard": "^16.0.4"
   }
 }
