@@ -4,23 +4,25 @@
   "description": "Project developed following a serie of Youtube videos by Rodrigo Manguinhos (@rmanguinho)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "lint-staged"
   },
   "author": "sidnei-junior",
   "license": "ISC",
   "lint-staged": {
-    "*js": [
-      "standard"
+    "*.js": [
+      "standard --fix",
+      "git add"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npx lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "devDependencies": {
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.3",
-    "standard": "^16.0.4"
+    "husky": "^4.0.0-beta.5",
+    "lint-staged": "^9.4.3",
+    "standard": "^14.3.1"
   }
 }
