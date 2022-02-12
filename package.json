@@ -7,6 +7,9 @@
     "test": "jest",
     "lint": "lint-staged"
   },
+  "standard": {
+    "env": ["jest"]
+  },
   "author": "sidnei-junior",
   "license": "ISC",
   "devDependencies": {
