@@ -11,7 +11,9 @@
     "test:ci": "yarn test -- --coverage"
   },
   "standard": {
-    "env": ["jest"]
+    "env": [
+      "jest"
+    ]
   },
   "author": "sidnei-junior",
   "license": "ISC",
@@ -20,5 +22,8 @@
     "jest": "^27.5.1",
     "lint-staged": "^9.4.3",
     "standard": "^14.3.1"
+  },
+  "dependencies": {
+    "validator": "^13.7.0"
   }
 }
